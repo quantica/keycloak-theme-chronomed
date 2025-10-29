@@ -1,0 +1,373 @@
+/* ChronoMed Theme - Keycloak 24+ */
+/* Modern and responsive design */
+
+:root {
+    --primary-color: #4a90e2;
+    --primary-dark: #357abd;
+    --secondary-color: #50e3c2;
+    --error-color: #e74c3c;
+    --success-color: #7ed321;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --bg-light: #f8f9fa;
+    --border-color: #e1e8ed;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--text-dark);
+}
+
+.login-pf-page {
+    width: 100%;
+    max-width: 450px;
+}
+
+#kc-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 40px;
+    width: 100%;
+}
+
+#kc-container-wrapper {
+    width: 100%;
+}
+
+#kc-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#kc-header-wrapper {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.kc-logo {
+    margin-bottom: 20px;
+}
+
+.kc-logo-text {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Forms */
+#kc-form {
+    margin-top: 30px;
+}
+
+#kc-form-wrapper {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    border-color: var(--primary-dark);
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+.btn {
+    width: 100%;
+    padding: 14px 24px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+button:active,
+input[type="submit"]:active,
+.btn:active {
+    transform: translateY(0);
+}
+
+#kc-form-buttons {
+    margin-top: 25px;
+}
+
+/* Links */
+#kc-form-options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#kc-registration {
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Alerts */
+.alert {
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert-error,
+.alert-danger {
+    background: #fee;
+    border: 1px solid #fcc;
+    color: var(--error-color);
+}
+
+.alert-success {
+    background: #efe;
+    border: 1px solid #cfc;
+    color: #2d7a2d;
+}
+
+.alert-warning {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+}
+
+.alert-info {
+    background: #e7f3ff;
+    border: 1px solid #b3d9ff;
+    color: #004085;
+}
+
+.kc-feedback-text {
+    font-weight: 500;
+}
+
+/* Required fields */
+.required {
+    color: var(--error-color);
+    margin-left: 2px;
+}
+
+/* Error messages */
+.error-message {
+    display: block;
+    color: var(--error-color);
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+input[aria-invalid="true"] {
+    border-color: var(--error-color);
+    background-color: #fff5f5;
+}
+
+input[aria-invalid="true"]:focus {
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+/* Info text */
+#kc-info {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+}
+
+#kc-info-wrapper {
+    font-size: 14px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+/* Social providers */
+#kc-social-providers {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+}
+
+#kc-social-providers ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#kc-social-providers li {
+    margin-bottom: 10px;
+}
+
+#kc-social-providers button {
+    background: white;
+    color: var(--text-dark);
+    border: 2px solid var(--border-color);
+}
+
+#kc-social-providers button:hover {
+    background: var(--bg-light);
+    border-color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    #kc-container {
+        padding: 30px 25px;
+    }
+    
+    #kc-header-wrapper {
+        font-size: 24px;
+    }
+    
+    .kc-logo-text {
+        font-size: 28px;
+    }
+}
+
+/* Loading state */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Password strength indicator */
+.password-strength {
+    margin-top: 8px;
+    height: 4px;
+    background: var(--border-color);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.password-strength-bar {
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.password-strength-weak {
+    width: 33%;
+    background: var(--error-color);
+}
+
+.password-strength-medium {
+    width: 66%;
+    background: #f5a623;
+}
+
+.password-strength-strong {
+    width: 100%;
+    background: var(--success-color);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#kc-container {
+    animation: fadeIn 0.4s ease;
+}
+
