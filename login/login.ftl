@@ -13,7 +13,6 @@
                                 <input 
                                     tabindex="1" 
                                     id="username" 
-                                    class="${properties.kcInputClass!}" 
                                     name="username" 
                                     value="${(login.username!'')}" 
                                     type="text" 
@@ -36,7 +35,6 @@
                             <input 
                                 tabindex="2" 
                                 id="password" 
-                                class="${properties.kcInputClass!}" 
                                 name="password" 
                                 type="password" 
                                 autocomplete="current-password"

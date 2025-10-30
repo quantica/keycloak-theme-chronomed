@@ -47,7 +47,6 @@
                         <div class="kc-logo">
                             <span class="kc-logo-text">ChronoMed</span>
                         </div>
-                        ${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}
                     </div>
                 </div>
 
