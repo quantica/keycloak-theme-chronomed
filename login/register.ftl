@@ -16,7 +16,7 @@
                         <input 
                             type="text" 
                             id="firstName" 
-                            class="${properties.kcInputClass!}" 
+                             
                             name="firstName"
                             value="${(register.formData.firstName!'')}"
                             autocomplete="given-name"
@@ -42,7 +42,7 @@
                         <input 
                             type="text" 
                             id="lastName" 
-                            class="${properties.kcInputClass!}" 
+                             
                             name="lastName"
                             value="${(register.formData.lastName!'')}"
                             autocomplete="family-name"
@@ -66,7 +66,7 @@
                         <input 
                             type="email" 
                             id="email" 
-                            class="${properties.kcInputClass!}" 
+                             
                             name="email"
                             value="${(register.formData.email!'')}"
                             autocomplete="email"
@@ -91,7 +91,7 @@
                             <input 
                                 type="text" 
                                 id="username" 
-                                class="${properties.kcInputClass!}" 
+                                 
                                 name="username"
                                 value="${(register.formData.username!'')}"
                                 autocomplete="username"
@@ -116,7 +116,7 @@
                         <input 
                             type="password" 
                             id="password" 
-                            class="${properties.kcInputClass!}" 
+                             
                             name="password"
                             autocomplete="new-password"
                             aria-invalid="<#if messagesPerField.existsError('password','password-confirm')>true</#if>"
@@ -139,7 +139,7 @@
                         <input 
                             type="password" 
                             id="password-confirm" 
-                            class="${properties.kcInputClass!}" 
+                             
                             name="password-confirm"
                             autocomplete="new-password"
                             aria-invalid="<#if messagesPerField.existsError('password-confirm')>true</#if>"

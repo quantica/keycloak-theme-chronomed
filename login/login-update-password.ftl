@@ -23,7 +23,7 @@
                             type="password" 
                             id="password-new" 
                             name="password-new" 
-                            class="${properties.kcInputClass!}"
+                            
                             autofocus 
                             autocomplete="new-password"
                             aria-invalid="<#if messagesPerField.existsError('password','password-confirm')>true</#if>"
@@ -46,7 +46,7 @@
                             type="password" 
                             id="password-confirm" 
                             name="password-confirm" 
-                            class="${properties.kcInputClass!}"
+                            
                             autocomplete="new-password"
                             aria-invalid="<#if messagesPerField.existsError('password-confirm')>true</#if>"
                             placeholder="${msg("passwordConfirm")}"
