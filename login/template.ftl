@@ -1,6 +1,6 @@
 <#macro registeredLayout bodyClass="" displayInfo=false displayMessage=true displayRequiredFields=false showAnotherWayIfPresent=true>
 <!DOCTYPE html>
-<html lang="${locale}">
+<html lang="${.locale}">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
